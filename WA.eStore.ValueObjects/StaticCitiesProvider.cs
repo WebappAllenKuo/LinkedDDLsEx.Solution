@@ -31,12 +31,12 @@ namespace WA.eStore.ValueObjects
 		}
 
 
-		public override IEnumerable<City> GetCities()
+		public override List<City> GetCities()
 		{
-			return StaticCitiesProvider.cities.OrderBy(x => x.Id);
+			return StaticCitiesProvider.cities.OrderBy(x => x.Id).ToList();
 		}
 
-		public override IEnumerable<Village> GetVillages(City city)
+		public override List<Village> GetVillages(City city)
 		{
 			return StaticCitiesProvider.cities
 				.FirstOrDefault(x => x.Id == city.Id)

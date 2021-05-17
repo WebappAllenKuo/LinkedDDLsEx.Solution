@@ -12,5 +12,10 @@
 			VillageName = villageName;
 			ZipCode = zipCode;
 		}
+
+		public override string ToString()
+		{
+			return this.VillageName;
+		}
 	}
 }

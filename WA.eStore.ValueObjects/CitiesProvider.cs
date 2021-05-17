@@ -7,9 +7,9 @@ namespace WA.eStore.ValueObjects
 {
 	public abstract class CitiesProvider
 	{
-		public abstract IEnumerable<City> GetCities();
+		public abstract List<City> GetCities();
 		// public abstract IEnumerable<Village> GetVillages(int cityId);
-		public abstract IEnumerable<Village> GetVillages(City city);
+		public abstract List<Village> GetVillages(City city);
 		
 	}
 }

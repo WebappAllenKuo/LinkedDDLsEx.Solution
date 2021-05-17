@@ -14,5 +14,10 @@ namespace WA.eStore.ValueObjects
 			CityName = cityName;
 			Villages = villages;
 		}
+
+		public override string ToString()
+		{
+			return this.CityName;
+		}
 	}
 }
